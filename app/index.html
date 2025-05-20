@@ -7,11 +7,21 @@
 	<title>Tuneinlove</title>
 	<meta name="description" content="Tuneinlove">
 <meta name="keywords" content="Tuneinlove">
-
+<!-- Preconnect для шрифтов -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Preload для конкретных woff2-файлов -->
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/ibmplexsans/v16/IBMPlexSans-Regular.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/mulish/v12/Mulish-Regular.woff2" crossorigin>
+
+<!-- Основная Google Fonts CSS -->
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+<link rel="preload" href="css/style.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="preload" as="image" href="img/photo1.png" />
+	<link rel="preload" as="image" href="img/photo2.png" />
 </head>
 <body>
 
@@ -20,7 +30,7 @@
 		<div class="container">
 			<div class="logo">
 				<a href="index.html">
-					<img src="img/logo.svg" alt="logo" loading="lazy">
+					<img src="img/logo.svg" alt="logo" width="280" height="50">
 				</a>
 			</div>
 		</div>
@@ -35,7 +45,7 @@
 				Music Lovers
 				<span>
 					on Telegram
-					<img src="img/telegram.svg" alt="" loading="lazy" loading="lazy">
+					<img src="img/telegram.svg" alt="" loading="lazy" width="23" height="23">
 				</span>
 			</h1>
 
@@ -45,7 +55,7 @@
 						<div class="name-wrapper">
 							Logan
 						</div>
-						<img src="img/photo1.png" alt="flag" class="photo1 photo" loading="lazy">
+						<img src="img/photo1.png" alt="flag" class="photo1 photo" width="146" height="146">
 						
 					</div>
 
@@ -53,12 +63,12 @@
 						<div class="name-wrapper">
 							Emma 
 						</div>
-						<img src="img/photo2.png" alt="photo" class="photo2 photo" loading="lazy">
+						<img src="img/photo2.png" alt="photo" class="photo2 photo" width="160" height="160">
 					</div>
 				</div>
 
 				<div class="main-screen__content-wrapper">
-					<img src="img/genres.svg" alt="logo" loading="lazy">
+					<img src="img/genres.svg" alt="logo" width="35" height="33" class="heart">
 
 				<h2 class="h2">
 					Catch Her Musiс Wave!
@@ -118,23 +128,23 @@
 				<div class="photos-list">
 
 					<div class="photo-l">
-						<img src="img/pl1.png" alt="" >
+						<img src="img/pl1.png" alt="" width="125" height="125">
 					</div>
 					
 					<div class="photo-l">
-						<img src="img/pl2.png" alt="">
+						<img src="img/pl2.png" alt="" width="125" height="125">
 					</div>
 					
 					<div class="photo-l">
-						<img src="img/pl3.png" alt="">
+						<img src="img/pl3.png" alt="" width="125" height="125">
 					</div>
 
 					<div class="photo-l">
-						<img src="img/pl4.png" alt="">
+						<img src="img/pl4.png" alt="" width="125" height="125">
 					</div>
 
 					<div class="photo-l">
-						<img src="img/pl5.png" alt="">
+						<img src="img/pl5.png" alt="" width="125" height="125">
 					</div>
 				
 				</div>
@@ -172,21 +182,21 @@
 						Rate Your Potential <br>
 						Partner 👍
 					</h3>
-					<img src="img/img1.png" alt="image" class="item__image" loading="lazy">
+					<img src="img/img1.webp" alt="image" class="item__image" loading="lazy" width="245" height="298">
 				</div>
 
 				<div class="item">
 					<h3 class="h3">
 						Get response in a few seconds
 					</h3>
-					<img src="img/img2.png" alt="image" class="item__image" loading="lazy">
+					<img src="img/img2.webp" alt="image" class="item__image" loading="lazy" width="245" height="298">
 				</div>
 
 				<div class="item">
 					<h3 class="h3">
 						Safe Chat in Telegram 🔐
 					</h3>
-					<img src="img/img3.png" alt="image" class="item__image" loading="lazy">
+					<img src="img/img3.webp" alt="image" class="item__image" loading="lazy" width="245" height="298">
 				</div>
 
 				<div class="item item--lg">
@@ -194,7 +204,7 @@
 						Find Your Music Companion! Chat, Flirt, Have Fun!
 😍
 					</h3>
-					<img src="img/img4.png" alt="image" class="item__image item__image--lg" loading="lazy">
+					<img src="img/img4.webp" alt="image" class="item__image item__image--lg" loading="lazy" width="294" height="150">
 				</div>
 
 				
@@ -226,7 +236,7 @@
 				<div class="benefits__item">
 
 					<div class="benefits__icon-wrapper">				
-						<img src="img/icon1.svg" alt="icon" loading="lazy">
+						<img src="img/icon1.svg" alt="icon" loading="lazy" width="30" height="30">
 					</div>
 					<div class="benefits__title">
 						100,000+ Attractive Women Ready to Chat
@@ -235,7 +245,7 @@
 
 				<div class="benefits__item">
 					<div class="benefits__icon-wrapper">
-						<img src="img/icon2.svg" alt="icon" loading="lazy">
+						<img src="img/icon2.svg" alt="icon" loading="lazy" width="30" height="30">
 					</div>
 					<div class="benefits__title">
 						Only Verified Profiles (18+)
@@ -244,7 +254,7 @@
 
 				<div class="benefits__item">
 					<div class="benefits__icon-wrapper">
-						<img src="img/icon3.svg" alt="icon" loading="lazy">
+						<img src="img/icon3.svg" alt="icon" loading="lazy" width="30" height="30">
 					</div>
 					<div class="benefits__title">
 						A Lot of Responses and <br> Attention
@@ -253,7 +263,7 @@
 
 				<div class="benefits__item">
 					<div class="benefits__icon-wrapper">
-						<img src="img/icon4.svg" alt="icon" loading="lazy">
+						<img src="img/icon4.svg" alt="icon" loading="lazy" width="30" height="30">
 					</div>
 					<div class="benefits__title">
 						No Registration Needed
@@ -262,7 +272,7 @@
 
 				<div class="benefits__item">
 					<div class="benefits__icon-wrapper">
-						<img src="img/icon5.svg" alt="icon" loading="lazy">
+						<img src="img/icon5.svg" alt="icon" loading="lazy" width="30" height="30">
 					</div>
 					<div class="benefits__title">
 						100% Safe and Secure
@@ -284,7 +294,7 @@
 
 				<div class="review__item">
 
-					<img src="img/r1.png" alt="" class="review__item-img">
+					<img src="img/r1.png" alt="" class="review__item-img" width="85" height="85">
 
 					
 
@@ -298,7 +308,7 @@
 						</div>						
 					</div>
 
-					<img src="img/stars.svg" alt="stars" loading="lazy" class="stars-img">
+					<img src="img/stars.svg" alt="stars" loading="lazy" class="stars-img" width="117" height="22">
 
 
 
@@ -312,7 +322,7 @@
 
 					
 
-					<img src="img/r2.png" alt="" class="review__item-img">
+					<img src="img/r2.png" alt="" class="review__item-img" width="85" height="85">
 					
 
 					<div class="review__author-wrapper">
@@ -326,7 +336,7 @@
 							
 					</div>
 
-					<img src="img/stars.svg" alt="stars" loading="lazy" class="stars-img">
+					<img src="img/stars.svg" alt="stars" loading="lazy" class="stars-img" width="117" height="22">
 
 					<div class="review__text">
 						Finding someone who feels music the way I do was everything. We don't just listen — we connect through every note
@@ -336,7 +346,7 @@
 
 				<div class="review__item">
 
-					<img src="img/r3.png" alt="" class="review__item-img">
+					<img src="img/r3.png" alt="" class="review__item-img" width="85" height="85">
 					
 
 					<div class="review__author-wrapper">
@@ -350,7 +360,7 @@
 							
 					</div>
 
-					<img src="img/stars.svg" alt="stars" loading="lazy" class="stars-img">
+					<img src="img/stars.svg" alt="stars" loading="lazy" class="stars-img" width="117" height="22">
 
 					<div class="review__text">
 						From vinyl collections to late-night jam sessions, we found more than chemistry — we found harmony. This site helped us tune into something real
